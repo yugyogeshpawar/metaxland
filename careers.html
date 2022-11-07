@@ -1,0 +1,812 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cvl7nsr.css">
+    <link href="css/style2.css?v=15" rel="stylesheet">
+
+    <link href="css/style1.css?v=15" rel="stylesheet">
+    <title>
+        Meta x Land Blockchain Metaverse
+    </title>
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="themes/metaxland/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="themes/metaxland/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="themes/metaxland/assets/images/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest.html">
+    <link rel="mask-icon" href="themes/metaxland/assets/images/safari-pinned-tab.svg" color="#5bbad5">
+
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" type="text/css" href="css/scss.css.map" />
+    <link rel="stylesheet" type="text/css" href="css/scss.css" />
+
+
+</head>
+
+
+<div class="page-bg"></div>
+
+<div class="animation-wrapper">
+    <div class="particle particle-1"></div>
+    <div class="particle particle-2"></div>
+    <div class="particle particle-3"></div>
+    <div class="particle particle-4"></div>
+</div>
+
+
+<!-- TOP-NAVBAR -->
+<nav id="top-navbar" class="navbar fixed-top navbar-expand-lg navbar-dark">
+    <div class="container px-lg-0">
+        <a class="navbar-brand me-5" href="index.htm">
+            <img src="main-media/media/Meta_X_Land-logo.png" alt="meta x land" style="width: 90;">
+        </a>
+
+        <a class="nav-link text-uppercase " onclick="closeModal('#top-navbar-fullscreen-modal');"
+            href="auth/buy-land.html" target="_blank">
+            Map
+        </a>
+        <a class="nav-link text-uppercase " onclick="closeModal('#top-navbar-fullscreen-modal');"
+            href="index.htm#launchpad">
+            Launchpad
+        </a>
+        <a class="nav-link text-uppercase " onclick="closeModal('#top-navbar-fullscreen-modal');" href="index.htm#MXLT">
+            MXLT
+        </a>
+        <a class="nav-link text-uppercase " onclick="closeModal('#top-navbar-fullscreen-modal');" href="#footer-menu">
+            Contact us
+        </a>
+        <a class="nav-link text-uppercase " onclick="closeModal('#top-navbar-fullscreen-modal');" href="careers.html">
+            We&#039;re hiring!
+        </a>
+
+        <a class="login-button btn btn-outline-light text-uppercase ms-auto" href="auth/login.html">Login</a>
+        <a class="connect-wallet-button btn text-uppercase" href="javascript:;" data-bs-toggle="modal"
+            data-bs-target="#connect-wallet-modal">Connect wallet</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="modal"
+            data-bs-target="#top-navbar-fullscreen-modal">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</nav>
+<!-- END TOP-NAVBAR -->
+
+<!-- CONNECT-WALLET-MODAL -->
+<div id="connect-wallet-modal" class="modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Connect your wallet</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+            </div>
+            <div class="modal-footer">
+                <div class="row w-100">
+
+                    <div class="col-6 px-0">
+                        <button type="button" class="connect-wallet-button btn pinkish text-uppercase"
+                            onclick="window.location.href = '#';">
+                            <svg width="19" height="18" viewbox="0 0 19 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18 15V16C18 17.1 17.1 18 16 18H2C0.89 18 0 17.1 0 16V2C0 0.9 0.89 0 2 0H16C17.1 0 18 0.9 18 2V3H9C7.89 3 7 3.9 7 5V13C7 14.1 7.89 15 9 15H18ZM9 13H19V5H9V13ZM13 10.5C12.17 10.5 11.5 9.83 11.5 9C11.5 8.17 12.17 7.5 13 7.5C13.83 7.5 14.5 8.17 14.5 9C14.5 9.83 13.83 10.5 13 10.5Z"
+                                    fill="white"></path>
+                            </svg>
+                            Connect wallet
+                        </button>
+                    </div>
+
+                    <div class="col-6 px-0">
+                        <button type="button" class="btn outline text-uppercase" onclick="window.location.href = '#';">
+                            <svg width="18" height="18" viewbox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M2 15C2 15.55 2.45 16 3 16H15C15.55 16 16 15.55 16 15V10C16 9.45 16.45 9 17 9C17.55 9 18 9.45 18 10V16C18 17.1 17.1 18 16 18H2C0.9 18 0 17.1 0 16V2C0 0.9 0.89 0 2 0H8C8.55 0 9 0.45 9 1C9 1.55 8.55 2 8 2H3C2.45 2 2 2.45 2 3V15ZM12 2C11.45 2 11 1.55 11 1C11 0.45 11.45 0 12 0H17C17.55 0 18 0.45 18 1V6C18 6.55 17.55 7 17 7C16.45 7 16 6.55 16 6V3.41L6.87 12.54C6.48 12.93 5.85 12.93 5.46 12.54C5.07 12.15 5.07 11.52 5.46 11.13L14.59 2H12Z">
+                                </path>
+                            </svg>
+                            Learn about wallets
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END CONNECT-WALLET-MODAL -->
+
+<!-- TOP-NAVBAR-FULLSCREEN-MODAL -->
+<div id="top-navbar-fullscreen-modal" class="modal" tabindex="-1">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a class="modal-logo" href="index.htm">
+                    <svg width="107" height="42" viewbox="0 0 107 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0)">
+                            <path
+                                d="M59.1213 18.5181L53.8076 10.3189V18.5181H51.1788V5.24316H53.528L58.8416 13.3866V5.24316H61.4705V18.5738H59.1213V18.5181Z"
+                                fill="white"></path>
+                            <path
+                                d="M64.5468 18.5181V5.24316H73.3283V7.58579H67.1197V10.7093H72.3774V13.0519H67.1197V16.287H73.3283V18.6296H64.5468V18.5181Z"
+                                fill="white"></path>
+                            <path
+                                d="M82.8369 18.5181L80.264 13.8886L77.6911 18.5181H74.7266L78.8657 11.7133L75.0063 5.24316H77.9707L80.3199 9.53798L82.6691 5.24316H85.6336L81.6623 11.7133L85.8014 18.5181H82.8369Z"
+                                fill="white"></path>
+                            <path
+                                d="M93.2404 7.53002V18.5181H90.6116V7.53002H87.1437V5.24316H96.7642V7.58579H93.2404V7.53002Z"
+                                fill="white"></path>
+                            <path
+                                d="M51.2347 35.5301V22.1995H60.0162V24.5421H53.8636V27.6656H59.1213V30.0082H53.8636V33.2433H60.0721V35.5859H51.2347V35.5301Z"
+                                fill="white"></path>
+                            <path
+                                d="M70.5876 35.5301L69.8045 33.1875H65.0502L64.2671 35.5301H61.5264L66.3926 22.1995H68.4621L73.3283 35.5301H70.5876ZM67.4553 26.1038L65.7773 30.9564H69.0774L67.4553 26.1038Z"
+                                fill="white"></path>
+                            <path
+                                d="M82.1657 35.5301L79.5369 30.2313H77.6351V35.5301H75.0063V22.1995H80.264C83.0047 22.1995 84.5708 24.0401 84.5708 26.2712C84.5708 28.1676 83.4522 29.2831 82.1098 29.7851L85.0742 35.5301H82.1657ZM80.1521 24.5421H77.6911V28.056H80.1521C81.2708 28.056 82.0538 27.3309 82.0538 26.2712C82.0538 25.2672 81.2708 24.5421 80.1521 24.5421Z"
+                                fill="white"></path>
+                            <path d="M92.0659 24.5421V35.5301H89.4929V24.5421H86.0251V22.1995H95.5896V24.5421H92.0659Z"
+                                fill="white"></path>
+                            <path
+                                d="M104.371 35.5301V29.9525H99.8406V35.5301H97.2117V22.1995H99.8406V27.6656H104.371V22.1995H107V35.5301H104.371Z"
+                                fill="white"></path>
+                            <path
+                                d="M35.909 6.13549C27.6869 -2.06372 14.3748 -2.06372 6.15265 6.13549C-2.06952 14.3347 -2.06952 27.6096 6.15265 35.8088C14.3748 44.008 27.6869 44.008 35.909 35.8088C44.1312 27.6096 44.1312 14.3347 35.909 6.13549ZM33.3921 33.5219C30.0361 36.6454 21.8698 33.6893 15.1019 26.9403C8.33404 20.1913 5.36958 11.769 8.6137 8.53389C11.9138 5.18728 16.3884 3.40242 21.0868 3.40242C25.7852 3.40242 30.2039 5.24306 33.5599 8.53389C40.3837 15.3387 40.4396 26.4383 33.6158 33.2988L33.5039 33.4662C33.448 33.4662 33.448 33.4662 33.3921 33.5219Z"
+                                fill="white"></path>
+                        </g>
+                        <defs>
+                            <clippath id="clip0">
+                                <rect width="107" height="42" fill="white"></rect>
+                            </clippath>
+                        </defs>
+                    </svg>
+
+                </a>
+                <a class="login-button btn btn-outline-light text-uppercase ms-auto" href="/auth/login.html">Login</a>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body d-flex flex-column h-100 w-100">
+
+                <div class="upper-box text-center mt-auto mb-auto">
+                    <a class="nav-link text-uppercase " onclick="closeModal('#top-navbar-fullscreen-modal');"
+                        href="auth/buy-land.html" target="_blank">
+                        Map
+                    </a>
+                    <a class="nav-link text-uppercase " onclick="closeModal('#top-navbar-fullscreen-modal');"
+                        href="index.htm#launchpad">
+                        Launchpad
+                    </a>
+                    <a class="nav-link text-uppercase " onclick="closeModal('#top-navbar-fullscreen-modal');"
+                        href="index.htm#MXLT">
+                        MXLT
+                    </a>
+                    <a class="nav-link text-uppercase " onclick="closeModal('#top-navbar-fullscreen-modal');"
+                        href="#footer-menu">
+                        Contact us
+                    </a>
+                    <a class="nav-link text-uppercase  active" onclick="closeModal('#top-navbar-fullscreen-modal');"
+                        href="careers.html">
+                        We&#039;re hiring!
+                    </a>
+                </div>
+
+                <div class="down-box mb-0 mt-auto w-100 pb-4">
+                    <a class="buy-land-button btn pinkish  text-uppercase text-center" href="auth/buy-land.html">
+                        <svg class="me-2" width="20" height="20" viewbox="0 0 20 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6 16C4.9 16 4.01 16.9 4.01 18C4.01 19.1 4.9 20 6 20C7.1 20 8 19.1 8 18C8 16.9 7.1 16 6 16ZM0 0V2H2L5.6 9.59L4.25 12.04C4.09 12.32 4 12.65 4 13C4 14.1 4.9 15 6 15H18V13H6.42C6.28 13 6.17 12.89 6.17 12.75L6.2 12.63L7.1 11H14.55C15.3 11 15.96 10.59 16.3 9.97L19.88 3.48C19.96 3.34 20 3.17 20 3C20 2.45 19.55 2 19 2H4.21L3.27 0H0ZM16 16C14.9 16 14.01 16.9 14.01 18C14.01 19.1 14.9 20 16 20C17.1 20 18 19.1 18 18C18 16.9 17.1 16 16 16Z"
+                                fill="white"></path>
+                        </svg>
+                        Buy land
+                    </a>
+
+                    <a class="mobile-cwbtn-open connect-wallet-button btn outline mt-4 d-block  btn-block text-uppercase text-center"
+                        href="javascript:;">
+                        <svg class="me-2" width="19" height="18" viewbox="0 0 19 18" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M18 15V16C18 17.1 17.1 18 16 18H2C0.89 18 0 17.1 0 16V2C0 0.9 0.89 0 2 0H16C17.1 0 18 0.9 18 2V3H9C7.89 3 7 3.9 7 5V13C7 14.1 7.89 15 9 15H18ZM9 13H19V5H9V13ZM13 10.5C12.17 10.5 11.5 9.83 11.5 9C11.5 8.17 12.17 7.5 13 7.5C13.83 7.5 14.5 8.17 14.5 9C14.5 9.83 13.83 10.5 13 10.5Z"
+                                fill="white"></path>
+                        </svg>
+                        Connect wallet
+                    </a>
+
+                    <div class="social-icons">
+
+                        <a href="#" target="_blank" title="Twitter">
+                            <svg width="23" height="18" viewbox="0 0 23 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20.3226 4.49609C21.182 3.85156 21.9554 3.07812 22.557 2.17578C21.7836 2.51953 20.8812 2.77734 19.9789 2.86328C20.9242 2.30469 21.6117 1.44531 21.9554 0.371094C21.0961 0.886719 20.1078 1.27344 19.1195 1.48828C18.2601 0.585938 17.1 0.0703125 15.8109 0.0703125C13.3187 0.0703125 11.2992 2.08984 11.2992 4.58203C11.2992 4.92578 11.3422 5.26953 11.4281 5.61328C7.68982 5.39844 4.33826 3.59375 2.10388 0.886719C1.71716 1.53125 1.50232 2.30469 1.50232 3.16406C1.50232 4.71094 2.27576 6.08594 3.52185 6.90234C2.79138 6.85938 2.06091 6.6875 1.45935 6.34375V6.38672C1.45935 8.57812 3.00623 10.3828 5.06873 10.8125C4.72498 10.8984 4.29529 10.9844 3.90857 10.9844C3.60779 10.9844 3.34998 10.9414 3.04919 10.8984C3.60779 12.7031 5.28357 13.9922 7.26013 14.0352C5.71326 15.2383 3.77966 15.9688 1.67419 15.9688C1.28748 15.9688 0.943726 15.9258 0.599976 15.8828C2.57654 17.1719 4.93982 17.9023 7.51794 17.9023C15.8109 17.9023 20.3226 11.0703 20.3226 5.09766C20.3226 4.88281 20.3226 4.71094 20.3226 4.49609Z"
+                                    fill="white"></path>
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank" title="Telegram">
+                            <svg width="22" height="22" viewbox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.2 0.308594C5.31323 0.308594 0.543701 5.07812 0.543701 10.9648C0.543701 16.8516 5.31323 21.6211 11.2 21.6211C17.0867 21.6211 21.8562 16.8516 21.8562 10.9648C21.8562 5.07812 17.0867 0.308594 11.2 0.308594ZM16.3992 7.61328L14.6804 15.8633C14.5515 16.4648 14.2078 16.5938 13.6921 16.3359L11.0281 14.3594L9.73901 15.6055C9.61011 15.7344 9.4812 15.8633 9.22339 15.8633L9.39526 13.1562L14.3367 8.6875C14.5515 8.51562 14.2937 8.38672 13.9929 8.55859L7.89136 12.4258L5.27026 11.6094C4.71167 11.4375 4.71167 11.0078 5.39917 10.75L15.6687 6.79688C16.1414 6.625 16.571 6.92578 16.3992 7.61328Z"
+                                    fill="white"></path>
+                            </svg>
+                        </a>
+
+
+                        <a href="https://www.youtube.com/channel/UCN-G3DI6E0pIxlbzX_vKe3w" target="_blank"
+                            title="Youtube">
+                            <svg width="24" height="18" viewbox="0 0 24 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M23.2148 3.33594C22.957 2.30469 22.1406 1.48828 21.1523 1.23047C19.3047 0.714844 12 0.714844 12 0.714844C12 0.714844 4.65234 0.714844 2.80469 1.23047C1.81641 1.48828 1 2.30469 0.742188 3.33594C0.226562 5.14062 0.226562 9.00781 0.226562 9.00781C0.226562 9.00781 0.226562 12.832 0.742188 14.6797C1 15.7109 1.81641 16.4844 2.80469 16.7422C4.65234 17.2148 12 17.2148 12 17.2148C12 17.2148 19.3047 17.2148 21.1523 16.7422C22.1406 16.4844 22.957 15.7109 23.2148 14.6797C23.7305 12.832 23.7305 9.00781 23.7305 9.00781C23.7305 9.00781 23.7305 5.14062 23.2148 3.33594ZM9.59375 12.4883V5.52734L15.6953 9.00781L9.59375 12.4883Z"
+                                    fill="white"></path>
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank" title="Discord">
+                            <svg width="22" height="17" viewbox="0 0 22 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18.6239 1.51386C17.2217 0.872068 15.7181 0.399221 14.1459 0.128402C14.1173 0.123175 14.0887 0.136237 14.0739 0.162361C13.8805 0.505456 13.6663 0.95305 13.5163 1.30486C11.8254 1.05233 10.1431 1.05233 8.48679 1.30486C8.33676 0.94523 8.11478 0.505456 7.92053 0.162361C7.90578 0.137109 7.87718 0.124047 7.84855 0.128402C6.27725 0.398356 4.7736 0.871203 3.37052 1.51386C3.35838 1.51909 3.34797 1.5278 3.34106 1.53912C0.488942 5.78955 -0.292371 9.93551 0.0909151 14.0301C0.0926494 14.0501 0.103922 14.0693 0.119532 14.0814C2.00127 15.4599 3.82406 16.2968 5.61301 16.8515C5.64164 16.8602 5.67197 16.8497 5.69019 16.8262C6.11337 16.2498 6.49059 15.6419 6.81402 15.0027C6.83311 14.9653 6.81489 14.9209 6.77588 14.9061C6.17754 14.6797 5.6078 14.4036 5.05975 14.0902C5.0164 14.0649 5.01293 14.0031 5.05281 13.9734C5.16814 13.8872 5.2835 13.7975 5.39363 13.707C5.41355 13.6904 5.44131 13.6869 5.46474 13.6974C9.06518 15.3372 12.9631 15.3372 16.521 13.6974C16.5445 13.6861 16.5722 13.6896 16.593 13.7061C16.7032 13.7967 16.8185 13.8872 16.9347 13.9734C16.9746 14.0031 16.972 14.0649 16.9286 14.0902C16.3806 14.4097 15.8108 14.6797 15.2116 14.9052C15.1726 14.92 15.1553 14.9653 15.1744 15.0027C15.5047 15.641 15.882 16.2489 16.2973 16.8254C16.3147 16.8497 16.3459 16.8602 16.3745 16.8515C18.1721 16.2968 19.9949 15.4599 21.8766 14.0814C21.8931 14.0693 21.9035 14.051 21.9053 14.0309C22.364 9.29718 21.1369 5.18522 18.6525 1.53998C18.6465 1.5278 18.6361 1.51909 18.6239 1.51386ZM7.35169 11.5369C6.26771 11.5369 5.37454 10.5442 5.37454 9.32505C5.37454 8.10591 6.25039 7.1132 7.35169 7.1132C8.46163 7.1132 9.34616 8.11462 9.32881 9.32505C9.32881 10.5442 8.45296 11.5369 7.35169 11.5369ZM14.6619 11.5369C13.5779 11.5369 12.6847 10.5442 12.6847 9.32505C12.6847 8.10591 13.5606 7.1132 14.6619 7.1132C15.7718 7.1132 16.6563 8.11462 16.639 9.32505C16.639 10.5442 15.7718 11.5369 14.6619 11.5369Z"
+                                    fill="white"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END TOP-NAVBAR-FULLSCREEN-MODAL -->
+
+<!-- WALLET-CONNECT-FULLSCREEN-MODAL -->
+<div id="wallet-connect-fullscreen-modal" class="modal" tabindex="-1">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="mobile-wcbtn-close btn-close btn-close-white" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex flex-column w-100 h-100">
+                <div class="connect-content my-auto">
+                    <h5>Connect your wallet</h5>
+
+                </div>
+                <div class="footer-buttons pb-4 mb-0">
+                    <button type="button" class="connect-wallet-button btn pinkish text-uppercase mb-2"
+                        onclick="window.location.href = 'https://meta-x-land/auth/buy-land';">
+                        <svg width="19" height="18" viewbox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M18 15V16C18 17.1 17.1 18 16 18H2C0.89 18 0 17.1 0 16V2C0 0.9 0.89 0 2 0H16C17.1 0 18 0.9 18 2V3H9C7.89 3 7 3.9 7 5V13C7 14.1 7.89 15 9 15H18ZM9 13H19V5H9V13ZM13 10.5C12.17 10.5 11.5 9.83 11.5 9C11.5 8.17 12.17 7.5 13 7.5C13.83 7.5 14.5 8.17 14.5 9C14.5 9.83 13.83 10.5 13 10.5Z"
+                                fill="white"></path>
+                        </svg>
+                        Connect wallet
+                    </button>
+                    <button type="button" class="btn outline text-uppercase mt-1" onclick="window.location.href = '#';">
+                        <svg width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2 15C2 15.55 2.45 16 3 16H15C15.55 16 16 15.55 16 15V10C16 9.45 16.45 9 17 9C17.55 9 18 9.45 18 10V16C18 17.1 17.1 18 16 18H2C0.9 18 0 17.1 0 16V2C0 0.9 0.89 0 2 0H8C8.55 0 9 0.45 9 1C9 1.55 8.55 2 8 2H3C2.45 2 2 2.45 2 3V15ZM12 2C11.45 2 11 1.55 11 1C11 0.45 11.45 0 12 0H17C17.55 0 18 0.45 18 1V6C18 6.55 17.55 7 17 7C16.45 7 16 6.55 16 6V3.41L6.87 12.54C6.48 12.93 5.85 12.93 5.46 12.54C5.07 12.15 5.07 11.52 5.46 11.13L14.59 2H12Z">
+                            </path>
+                        </svg>
+                        Learn about wallets
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END WALLET-CONNECT-FULLSCREEN-MODAL -->
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="ns.html?id=GTM-PQW5C74" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+
+    <section id="tutorials" class="container-fluid metaverse page-cover px-lg-0 py-5">
+        <!--<div class="bg"></div>-->
+
+
+        <div class="container d-block position-relative w-100 align-items-start justify-content-center pt-5 mt-lg-5">
+            <div class="row">
+                <div class="col-12 col-md-8 mx-auto text-center">
+                    <div class="content-place">
+                        <h1>Careers At <div>
+                                Meta X Land
+                            </div>
+                        </h1>
+
+                    </div>
+                    <div class="content-place">
+                        <p>MetaXLand™ is the first metaverse ecosystem that acts both as its own metaverse as well as a
+                            middleware layer for anyone to connect and build their own metaverse with our technology. We
+                            strive to democratize the metaverse and make the world a better, more connected place. After
+                            seeing incredible growth, we are currently looking to expand the team, to increase the
+                            momentum of the development even further.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="career-select mb-1 mt-5 text-center">
+            <div class="career-deps">
+                <input class="checkbox-department" type="radio" id="department-all" checked="" name="department"
+                    data-request="onChangeDepartment" data-request-update="'@careers': '#careerSection'" value='all'>
+                <label class="for-checkbox-department  career-dep-cl" for="department-all">
+                    <span>All Departments<span class='badge'>1</span></span>
+                </label>
+                <!--
+			--> <input class="checkbox-department" type="radio" id="department-2" name="department"
+                    data-request="onChangeDepartment" data-request-update="'@careers': '#careerSection'" value='2'>
+                <label class="for-checkbox-department" for="department-2">
+                    <span>Marketing<span class='badge'>0</span></span>
+                </label>
+                <input class="checkbox-department" type="radio" id="department-3" name="department"
+                    data-request="onChangeDepartment" data-request-update="'@careers': '#careerSection'" value='3'>
+                <label class="for-checkbox-department" for="department-3">
+                    <span>IT<span class='badge'>0</span></span>
+                </label>
+                <input class="checkbox-department" type="radio" id="department-4" name="department"
+                    data-request="onChangeDepartment" data-request-update="'@careers': '#careerSection'" value='4'>
+                <label class="for-checkbox-department" for="department-4">
+                    <span>Graphics<span class='badge'>1</span></span>
+                </label>
+            </div>
+        </div>
+
+        <div id="careerSection">
+
+            <div class="container career-1">
+                <div class="career-first">
+                    <div class="">
+                        <h4>NFT Digital Artist</h4>
+                    </div>
+                    <div class="career-features">
+                        <div>
+                            <span class="icon icon-clock white"></span>
+                            <label class="">Full Time</label>
+                        </div>
+                        <div>
+                            <span class="icon icon-backpack white"></span>
+                            <label class="">5 Years experience</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="left-content">
+                    <div class="btn-place">
+                        <a class="btn pinkish"
+                            href="assets/l/email-protection.html#6300021106061110230d061b17060211170b4d0a0c5c101601090600175e2b060207430c054333110c07160017">
+                            <span class="icon icon-mail-export-ou-lc white"></span>
+                            Apply for this job
+                        </a>
+                    </div>
+                    <div class="career-descs">
+                        <p class="career-desc">You will be working closely with the founders and Engineering to ensure
+                            that our product suite fulfills the company’s vision in a data-driven and agile way. You
+                            will help build and lead our team of Product Managers where competences, priorities and
+                            requirements vary between web2 and web3.</p>
+                        <div id="career_desc1" class="career-desc-long hide">
+                            <p><strong>Your job will be to:</strong></p>
+
+                            <ul>
+                                <li>Manage and improve our Product Development process with a user centric focus</li>
+                                <li>Work with the founders to define a product roadmap for the business</li>
+                                <li>Be the voice of our users and service providers</li>
+                                <li>Grow and manage a stellar product team</li>
+                                <li>Manage stakeholder relationships</li>
+                                <li>Own the roadmap of a product that becomes one of the TOP10 crypto projects in 3
+                                    years</li>
+                                <li>Ensure high velocity of product development via dual track agile</li>
+                            </ul>
+
+                            <p><strong>Requirements:</strong></p>
+
+                            <ul>
+                                <li>5+ years of working and leading product teams and functions</li>
+                                <li>Experience (or working knowledge) in crypto, web3, blockchain, DeFi</li>
+                                <li>Be comfortable with working in ambiguous environments where you need to find your
+                                    own answers and solutions</li>
+                                <li>Excellent stakeholder management skills</li>
+                                <li>Excellent communication skills</li>
+                                <li>Have the ability to express complex ideas simply and clearly</li>
+                                <li>Proficiency in English both verbal and written</li>
+                                <li>An interest in Metaverse is a plus</li>
+                            </ul>
+
+                            <p>
+                                <br>
+                            </p>
+
+                            <p>Meta x Land has built one of the largest metaverses in less than a year. You will be
+                                working with the best of the best and one of the keys for success is business focused
+                                creativity. If you are someone who fits the above criteria and thinking up new ideas to
+                                make a product better, more profitable and more addictive as a default, we’re looking
+                                for you.</p>
+
+                            <p>
+                                <br>
+                            </p>
+
+                            <p><strong>How to apply:</strong></p>
+
+                            <p>Please include your CV and salary requirements to your application</p>
+
+                            <p dir="ltr">Please reply with which positions you’d be interested in either the
+                                conversation or if this was sent to you by sending an email to&nbsp;<a
+                                    href="assets/l/email-protection.html#97f4f6e5f2f2e5e4d7f9f2efe3f2f6e5e3ffb9fef8"><span
+                                        class="__cf_email__"
+                                        data-cfemail="4e2d2f3c2b2b3c3d0e202b363a2b2f3c3a26602721">[email&#160;protected]</span></a>
+                                with subject line “Applying for ”, containing CV and your expectations</p>
+
+                            <p dir="ltr">Not interested in any of the positions? Refer us to someone that is and earn a
+                                250$ / MXLT bonus once they get hired and their probation period is over.</p>
+                        </div>
+                        <div>
+                            <a class="career-more-ddwn" onclick="toggleText('1')">
+                                <label for="">Learn more about this role</label>
+                                <span id="career_desc1_icon" class="icon icon-caret-down white"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="le-yo-press-blocks">
+        <div class="bg"></div>
+    </section>
+    <!-- MAIN-FOOTER -->
+    <footer id="main-footer">
+        <div class="container">
+            <div class="row px-2 px-lg-0">
+                <!-- FOOTER-NEWSLETTER-SUBSCRIBE -->
+                <div
+                    class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 order-3 order-sm-3 order-md-3 order-lg-1">
+                    <div id="newsletter-subscribe-wrapper">
+                        <form id="newsletter-subscribe-form" data-request="onSubmit" data-request-flash=""
+                            data-request-success="$('#newsletter-subscribe-input').val('');">
+                            <label for="newsletter-subscribe-input" class="form-label">Subscribe For News<br>And Latest
+                                Updates.</label>
+                            <div class="input-group">
+                                <input id="newsletter-subscribe-input" class="form-control" type="email" name="email"
+                                    placeholder="Email">
+                                <button id="newsletter-subscribe-btn" class="btn btn-outline-secondary text-uppercase"
+                                    type="submit">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- END FOOTER-NEWSLETTER-SUBSCRIBE -->
+                <!-- FOOTER-NEED-HELP -->
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 order-4 order-sm-4 order-md-2 order-lg-2"
+                    style="z-index: 999999999999;">
+                    <div id="footer-need-help" class="w-100">
+                        <a id="need-help-button" class="mx-auto" href="#" target="_blank">
+                            <div id="need-help-box" class="d-flex flex-row align-items-center">
+                                <div><svg width="93" height="94" viewbox="0 0 93 94" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g filter="url(#filter0_dd_257_559)">
+                                            <g clip-path="url(#clip0_257_559)">
+                                                <g filter="url(#filter1_d_257_559)">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M83 43.2148C83 25.2656 68.4493 10.7148 50.5 10.7148C32.5507 10.7148 18 25.2656 18 43.2148C18 61.1641 32.5507 75.7148 50.5 75.7148C68.4493 75.7148 83 61.1641 83 43.2148ZM36 32.0623C36 30.2098 37.495 28.7148 39.3313 28.7148H61.1063C62.9425 28.7148 64.4375 30.2098 64.4375 32.0623V61.2148L60.9437 58.1273L58.9775 56.3073L56.8975 54.3736L57.7588 57.3798H39.3313C37.495 57.3798 36 55.8848 36 54.0323V32.0623ZM53.7537 48.621C54.2412 49.2385 54.8262 49.9372 54.8262 49.9372C58.4175 49.8235 59.7987 47.4672 59.7987 47.4672C59.7987 42.2347 57.4587 37.9935 57.4587 37.9935C55.1187 36.2385 52.8925 36.2872 52.8925 36.2872L52.665 36.5472C55.4275 37.3922 56.7112 38.611 56.7112 38.611C55.0212 37.6847 53.3637 37.2297 51.82 37.051C50.65 36.921 49.5287 36.9535 48.5375 37.0835C48.4524 37.0835 48.3796 37.0959 48.2976 37.1098L48.2612 37.116C47.6925 37.1647 46.3112 37.376 44.5725 38.1397C43.9712 38.416 43.6137 38.611 43.6137 38.611C43.6137 38.611 44.9625 37.3272 47.8875 36.4822L47.725 36.2872C47.725 36.2872 45.4987 36.2385 43.1587 37.9935C43.1587 37.9935 40.8187 42.2347 40.8187 47.4672C40.8187 47.4672 42.1837 49.8235 45.775 49.9372C45.775 49.9372 46.3762 49.206 46.8637 48.5885C44.8 47.971 44.02 46.671 44.02 46.671C44.02 46.671 44.1825 46.7847 44.475 46.9472L44.475 46.9473C44.4912 46.9635 44.5075 46.9798 44.54 46.996C44.5644 47.0122 44.5887 47.0244 44.6131 47.0366C44.6375 47.0488 44.6619 47.061 44.6862 47.0772C45.0925 47.3047 45.4987 47.4835 45.8725 47.6297C46.5387 47.8897 47.335 48.1497 48.2612 48.3285C49.48 48.556 50.91 48.6372 52.47 48.3447C53.2337 48.2147 54.0137 47.9872 54.8262 47.646C55.395 47.4347 56.0287 47.126 56.695 46.6872C56.695 46.6872 55.8825 48.0197 53.7537 48.621ZM45.6125 44.1522C45.6125 43.161 46.3437 42.3485 47.27 42.3485C48.1962 42.3485 48.9437 43.161 48.9275 44.1522C48.9275 45.1435 48.1962 45.956 47.27 45.956C46.36 45.956 45.6125 45.1435 45.6125 44.1522ZM51.5437 44.1522C51.5437 43.161 52.275 42.3485 53.2012 42.3485C54.1275 42.3485 54.8587 43.161 54.8587 44.1522C54.8587 45.1435 54.1275 45.956 53.2012 45.956C52.2912 45.956 51.5437 45.1435 51.5437 44.1522Z"
+                                                        fill="url(#paint0_radial_257_559)"></path>
+                                                </g>
+                                                <mask id="mask0_257_559" style="mask-type:alpha"
+                                                    maskunits="userSpaceOnUse" x="18" y="10" width="65" height="66">
+                                                    <circle cx="50.5" cy="43.2148" r="32.5" fill="#C4C4C4"></circle>
+                                                </mask>
+                                                <g mask="url(#mask0_257_559)">
+                                                    <g filter="url(#filter2_f_257_559)">
+                                                        <circle cx="52.5" cy="41.2148" r="32" stroke="#00FF66"
+                                                            stroke-opacity="0.8" stroke-width="5"></circle>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                        <defs>
+                                            <filter id="filter0_dd_257_559" x="0" y="0.714844" width="93" height="93"
+                                                filterunits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                <feflood flood-opacity="0" result="BackgroundImageFix"></feflood>
+                                                <fecolormatrix in="SourceAlpha" type="matrix"
+                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                    result="hardAlpha"></fecolormatrix>
+                                                <feoffset dx="-4" dy="4"></feoffset>
+                                                <fegaussianblur stddeviation="7"></fegaussianblur>
+                                                <fecomposite in2="hardAlpha" operator="out"></fecomposite>
+                                                <fecolormatrix type="matrix"
+                                                    values="0 0 0 0 0.0156863 0 0 0 0 0.878431 0 0 0 0 0.572549 0 0 0 0.5 0">
+                                                </fecolormatrix>
+                                                <feblend mode="normal" in2="BackgroundImageFix"
+                                                    result="effect1_dropShadow_257_559"></feblend>
+                                                <fecolormatrix in="SourceAlpha" type="matrix"
+                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                    result="hardAlpha"></fecolormatrix>
+                                                <feoffset dx="2" dy="-2"></feoffset>
+                                                <fegaussianblur stddeviation="3"></fegaussianblur>
+                                                <fecomposite in2="hardAlpha" operator="out"></fecomposite>
+                                                <fecolormatrix type="matrix"
+                                                    values="0 0 0 0 0.38 0 0 0 0 0 0 0 0 0 1 0 0 0 0.6 0">
+                                                </fecolormatrix>
+                                                <feblend mode="normal" in2="effect1_dropShadow_257_559"
+                                                    result="effect2_dropShadow_257_559"></feblend>
+                                                <feblend mode="normal" in="SourceGraphic"
+                                                    in2="effect2_dropShadow_257_559" result="shape"></feblend>
+                                            </filter>
+                                            <filter id="filter1_d_257_559" x="0" y="-7.28516" width="93" height="93"
+                                                filterunits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                <feflood flood-opacity="0" result="BackgroundImageFix"></feflood>
+                                                <fecolormatrix in="SourceAlpha" type="matrix"
+                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                    result="hardAlpha"></fecolormatrix>
+                                                <feoffset dx="-4" dy="-4"></feoffset>
+                                                <fegaussianblur stddeviation="7"></fegaussianblur>
+                                                <fecomposite in2="hardAlpha" operator="out"></fecomposite>
+                                                <fecolormatrix type="matrix"
+                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.45 0"></fecolormatrix>
+                                                <feblend mode="normal" in2="BackgroundImageFix"
+                                                    result="effect1_dropShadow_257_559"></feblend>
+                                                <feblend mode="normal" in="SourceGraphic"
+                                                    in2="effect1_dropShadow_257_559" result="shape"></feblend>
+                                            </filter>
+                                            <filter id="filter2_f_257_559" x="8" y="-3.28516" width="89" height="89"
+                                                filterunits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                <feflood flood-opacity="0" result="BackgroundImageFix"></feflood>
+                                                <feblend mode="normal" in="SourceGraphic" in2="BackgroundImageFix"
+                                                    result="shape"></feblend>
+                                                <fegaussianblur stddeviation="5"
+                                                    result="effect1_foregroundBlur_257_559"></fegaussianblur>
+                                            </filter>
+                                            <radialgradient id="paint0_radial_257_559" cx="0" cy="0" r="1"
+                                                gradientunits="userSpaceOnUse"
+                                                gradienttransform="translate(69 17.2148) rotate(126.06) scale(63.7064 62.9697)">
+                                                <stop stop-color="#6100FF"></stop>
+                                                <stop offset="1" stop-color="#00D6AF"></stop>
+                                            </radialgradient>
+                                            <clippath id="clip0_257_559">
+                                                <rect x="18" y="10.7148" width="65" height="65" rx="32.5" fill="white">
+                                                </rect>
+                                            </clippath>
+                                        </defs>
+                                    </svg></div>
+                                <div>
+                                    <h5>Need Help?</h5>
+                                    <p>If you want to learn more, or ask the team behind Meta x Land, join our Discord
+                                        server</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- END FOOTER-NEED-HELP -->
+                <!-- FOOTER-SEPARATOR -->
+                <div class="col-12 order-4 order-md-4 order-lg-4">
+                    <div class="footer-separator"></div>
+                </div>
+                <!-- END FOOTER-SEPARATOR -->
+                <!-- FOOTER-DESCRIPTION -->
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 order-1 order-sm-1 order-md-1 order-lg-4"
+                    style="z-index: 999999999999;">
+                    <div id="footer-logo">
+                        <img src="main-media/media/Meta_X_Land-logo.png" alt="">
+                    </div>
+                    <div id="footer-description" class="op-50">
+                        <p>With the power of NFTs, we are building a platform for users to purchase, develop, and sell
+                            virtual land mapped onto the Earth.</p>
+                    </div>
+                    <div id="footer-social-icons">
+
+                        <a href="#" target="_blank" title="Twitter">
+                            <svg width="23" height="18" viewbox="0 0 23 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20.3226 4.49609C21.182 3.85156 21.9554 3.07812 22.557 2.17578C21.7836 2.51953 20.8812 2.77734 19.9789 2.86328C20.9242 2.30469 21.6117 1.44531 21.9554 0.371094C21.0961 0.886719 20.1078 1.27344 19.1195 1.48828C18.2601 0.585938 17.1 0.0703125 15.8109 0.0703125C13.3187 0.0703125 11.2992 2.08984 11.2992 4.58203C11.2992 4.92578 11.3422 5.26953 11.4281 5.61328C7.68982 5.39844 4.33826 3.59375 2.10388 0.886719C1.71716 1.53125 1.50232 2.30469 1.50232 3.16406C1.50232 4.71094 2.27576 6.08594 3.52185 6.90234C2.79138 6.85938 2.06091 6.6875 1.45935 6.34375V6.38672C1.45935 8.57812 3.00623 10.3828 5.06873 10.8125C4.72498 10.8984 4.29529 10.9844 3.90857 10.9844C3.60779 10.9844 3.34998 10.9414 3.04919 10.8984C3.60779 12.7031 5.28357 13.9922 7.26013 14.0352C5.71326 15.2383 3.77966 15.9688 1.67419 15.9688C1.28748 15.9688 0.943726 15.9258 0.599976 15.8828C2.57654 17.1719 4.93982 17.9023 7.51794 17.9023C15.8109 17.9023 20.3226 11.0703 20.3226 5.09766C20.3226 4.88281 20.3226 4.71094 20.3226 4.49609Z"
+                                    fill="white"></path>
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank" title="Telegram">
+                            <svg width="22" height="22" viewbox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.2 0.308594C5.31323 0.308594 0.543701 5.07812 0.543701 10.9648C0.543701 16.8516 5.31323 21.6211 11.2 21.6211C17.0867 21.6211 21.8562 16.8516 21.8562 10.9648C21.8562 5.07812 17.0867 0.308594 11.2 0.308594ZM16.3992 7.61328L14.6804 15.8633C14.5515 16.4648 14.2078 16.5938 13.6921 16.3359L11.0281 14.3594L9.73901 15.6055C9.61011 15.7344 9.4812 15.8633 9.22339 15.8633L9.39526 13.1562L14.3367 8.6875C14.5515 8.51562 14.2937 8.38672 13.9929 8.55859L7.89136 12.4258L5.27026 11.6094C4.71167 11.4375 4.71167 11.0078 5.39917 10.75L15.6687 6.79688C16.1414 6.625 16.571 6.92578 16.3992 7.61328Z"
+                                    fill="white"></path>
+                            </svg>
+                        </a>
+
+
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                viewBox="0 0 30 30" width="30px" height="23px">
+                                <g id="surface35815126">
+                                    <path
+                                        style=" stroke:none;fill-rule:nonzero;fill:rgb(92.54902%,94.117647%,94.509804%);fill-opacity:1;"
+                                        d="M 10 3 C 6.140625 3 3 6.140625 3 10 L 3 20 C 3 23.859375 6.140625 27 10 27 L 20 27 C 23.859375 27 27 23.859375 27 20 L 27 10 C 27 6.140625 23.859375 3 20 3 Z M 22 7 C 22.550781 7 23 7.449219 23 8 C 23 8.550781 22.550781 9 22 9 C 21.449219 9 21 8.550781 21 8 C 21 7.449219 21.449219 7 22 7 Z M 15 9 C 18.308594 9 21 11.691406 21 15 C 21 18.308594 18.308594 21 15 21 C 11.691406 21 9 18.308594 9 15 C 9 11.691406 11.691406 9 15 9 Z M 15 11 C 12.789062 11 11 12.789062 11 15 C 11 17.210938 12.789062 19 15 19 C 17.210938 19 19 17.210938 19 15 C 19 12.789062 17.210938 11 15 11 Z M 15 11 " />
+                                </g>
+                            </svg>
+                        </a>
+
+                        <a href="#" target="_blank" title="Youtube">
+                            <svg width="24" height="18" viewbox="0 0 24 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M23.2148 3.33594C22.957 2.30469 22.1406 1.48828 21.1523 1.23047C19.3047 0.714844 12 0.714844 12 0.714844C12 0.714844 4.65234 0.714844 2.80469 1.23047C1.81641 1.48828 1 2.30469 0.742188 3.33594C0.226562 5.14062 0.226562 9.00781 0.226562 9.00781C0.226562 9.00781 0.226562 12.832 0.742188 14.6797C1 15.7109 1.81641 16.4844 2.80469 16.7422C4.65234 17.2148 12 17.2148 12 17.2148C12 17.2148 19.3047 17.2148 21.1523 16.7422C22.1406 16.4844 22.957 15.7109 23.2148 14.6797C23.7305 12.832 23.7305 9.00781 23.7305 9.00781C23.7305 9.00781 23.7305 5.14062 23.2148 3.33594ZM9.59375 12.4883V5.52734L15.6953 9.00781L9.59375 12.4883Z"
+                                    fill="white"></path>
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank" title="Discord">
+                            <svg width="22" height="17" viewbox="0 0 22 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18.6239 1.51386C17.2217 0.872068 15.7181 0.399221 14.1459 0.128402C14.1173 0.123175 14.0887 0.136237 14.0739 0.162361C13.8805 0.505456 13.6663 0.95305 13.5163 1.30486C11.8254 1.05233 10.1431 1.05233 8.48679 1.30486C8.33676 0.94523 8.11478 0.505456 7.92053 0.162361C7.90578 0.137109 7.87718 0.124047 7.84855 0.128402C6.27725 0.398356 4.7736 0.871203 3.37052 1.51386C3.35838 1.51909 3.34797 1.5278 3.34106 1.53912C0.488942 5.78955 -0.292371 9.93551 0.0909151 14.0301C0.0926494 14.0501 0.103922 14.0693 0.119532 14.0814C2.00127 15.4599 3.82406 16.2968 5.61301 16.8515C5.64164 16.8602 5.67197 16.8497 5.69019 16.8262C6.11337 16.2498 6.49059 15.6419 6.81402 15.0027C6.83311 14.9653 6.81489 14.9209 6.77588 14.9061C6.17754 14.6797 5.6078 14.4036 5.05975 14.0902C5.0164 14.0649 5.01293 14.0031 5.05281 13.9734C5.16814 13.8872 5.2835 13.7975 5.39363 13.707C5.41355 13.6904 5.44131 13.6869 5.46474 13.6974C9.06518 15.3372 12.9631 15.3372 16.521 13.6974C16.5445 13.6861 16.5722 13.6896 16.593 13.7061C16.7032 13.7967 16.8185 13.8872 16.9347 13.9734C16.9746 14.0031 16.972 14.0649 16.9286 14.0902C16.3806 14.4097 15.8108 14.6797 15.2116 14.9052C15.1726 14.92 15.1553 14.9653 15.1744 15.0027C15.5047 15.641 15.882 16.2489 16.2973 16.8254C16.3147 16.8497 16.3459 16.8602 16.3745 16.8515C18.1721 16.2968 19.9949 15.4599 21.8766 14.0814C21.8931 14.0693 21.9035 14.051 21.9053 14.0309C22.364 9.29718 21.1369 5.18522 18.6525 1.53998C18.6465 1.5278 18.6361 1.51909 18.6239 1.51386ZM7.35169 11.5369C6.26771 11.5369 5.37454 10.5442 5.37454 9.32505C5.37454 8.10591 6.25039 7.1132 7.35169 7.1132C8.46163 7.1132 9.34616 8.11462 9.32881 9.32505C9.32881 10.5442 8.45296 11.5369 7.35169 11.5369ZM14.6619 11.5369C13.5779 11.5369 12.6847 10.5442 12.6847 9.32505C12.6847 8.10591 13.5606 7.1132 14.6619 7.1132C15.7718 7.1132 16.6563 8.11462 16.639 9.32505C16.639 10.5442 15.7718 11.5369 14.6619 11.5369Z"
+                                    fill="white"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="d-none d-lg-block">
+                        <div id="footer-copyright">
+                            <p>© metaxland • <span style="color:#8D8D8D !important;">2022 • All Rights Reserved</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- END FOOTER-DESCRIPTION -->
+                <!-- FOOTER-MENU -->
+                <div class="col-12 col-sm-12 col-md-12 col-lg-8 order-5 order-sm-5 order-md-5 order-lg-5"
+                    style="z-index: 999999999999;">
+                    <div id="footer-menu">
+                        <div class="row">
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 mb-4">
+                                <ul class="">
+                                    <li role="presentation" class="list-head  active  ">
+                                        <a class="  active" href="#">
+                                            Technology
+                                        </a>
+
+                                    </li>
+                                    <li role="presentation" class="    ">
+                                        <a class=" " href="#" target="_blank">
+                                            Marketplace
+                                        </a>
+
+                                    </li>
+                                    <li role="presentation" class="    ">
+                                        <a class=" " href="auth/buy-land.html" target="_blank">
+                                            Buy Land
+                                        </a>
+
+                                    </li>
+                                    <li role="presentation" class="    ">
+                                        <a class=" " href="#" target="_blank">
+                                            Whitepaper
+                                        </a>
+
+                                    </li>
+                                    <li role="presentation" class="    ">
+                                        <a class=" " href="index.htm#MXLT">
+                                            MXLT
+                                        </a>
+
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 mb-4">
+                                <ul class="">
+                                    <li role="presentation" class="list-head  active  ">
+                                        <a class="  active" href="index.htm">
+                                            Account
+                                        </a>
+
+                                    </li>
+                                    <li role="presentation" class="    ">
+                                        <a class=" " href="auth/login.html" target="_blank">
+                                            Login / Sign up
+                                        </a>
+
+                                    </li>
+                                    <li role="presentation" class="    ">
+                                        <a class=" " href="auth/login.html" target="_blank">
+                                            Profile
+                                        </a>
+
+                                    </li>
+                                    <li role="presentation" class="    ">
+                                        <a class=" " href="auth/login.html" target="_blank">
+                                            Settings
+                                        </a>
+
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 mb-4">
+                                <ul class="">
+                                    <li role="presentation" class="list-head  active  ">
+                                        <a class="  active" href="index.htm">
+                                            Contact us
+                                        </a>
+
+                                    </li>
+                                    <li role="presentation" class="    ">
+                                        <a class=" " href="#">
+                                            Contact our Support
+                                        </a>
+
+                                    </li>
+                                    <li role="presentation" class="    ">
+                                        <a class=" " href="#">
+                                            Inquiries
+                                        </a>
+
+                                    </li>
+                                    <li role="presentation" class="    ">
+                                        <a class=" " href="#" target="_blank">
+                                            Press Kit
+                                        </a>
+
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 mb-4">
+                                <ul class="">
+                                    <li role="presentation" class="list-head  active  ">
+                                        <a class="  active" href="index.htm">
+                                            Company
+                                        </a>
+
+                                    </li>
+                                    <li role="presentation" class="    ">
+                                        <a class=" " href="#">
+                                            Terms and Conditions
+                                        </a>
+
+                                    </li>
+                                    <li role="presentation" class="    ">
+                                        <a class=" " href="#">
+                                            Privacy Policy
+                                        </a>
+
+                                    </li>
+                                    <li role="presentation" class="    ">
+                                        <a class=" " href="#">
+                                            Cookie Settings
+                                        </a>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END FOOTER-MENU -->
+                <!-- FOOTER-COPYRIGHT -->
+                <div class="col-12 order-sm-5 order-5 order-sm-5 order-md-5 order-lg-5 d-block d-lg-none">
+                    <div id="footer-copyright">
+                        <p>© metaxland • <span style="color:#8D8D8D !important;">2022 • All Rights Reserved</span></p>
+                    </div>
+                </div>
+                <!-- END FOOTER-COPYRIGHT -->
+            </div>
+        </div>
+    </footer>
+    <!-- END MAIN-FOOTER -->
+
+
+    <script src="themes/metaxland/assets/js/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <!-- <script src="themes/metaxland/assets/vendors/chart/chart.min.js" type="text/javascript"></script> -->
+    <script src="themes/metaxland/assets/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <script src="themes/metaxland/assets/vendors/swiper/swiper-bundle.min.js" type="text/javascript"></script>
+    <script src="metaxland-js/js2.js" type="text/javascript"></script>
+
+
+
+    <link rel="stylesheet" property="stylesheet" href="modules/system/assets/css/framework.extras-min.css?v=1.1.8">
+
+</body>
+
+</html>
