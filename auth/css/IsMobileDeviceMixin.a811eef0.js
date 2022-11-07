@@ -1,0 +1,1 @@
+import{n}from"./index.b95dda67.js";const o={name:"IsMobileDeviceMixin",computed:{isMobileDevice(){return/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)}}};let t,r;const i={};var s=n(o,t,r,!1,_,null,null,null);function _(l){for(let e in i)this[e]=i[e]}var u=function(){return s.exports}();export{u as i};

@@ -1,0 +1,2 @@
+.tag-wrapper .focused { border-radius: 0.375rem; border-width: 1px; --tw-border-opacity: 1; border-color: rgb(219 39 119 / var(--tw-border-opacity)); --tw-bg-opacity: 1; background-color: rgb(32 0 77 / var(--tw-bg-opacity)); padding: 0.75rem; }
+details > summary[data-v-3b7250cd]::-webkit-details-marker { display: none; }

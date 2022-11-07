@@ -1,0 +1,306 @@
+@charset "UTF-8";
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+body {
+  background: #050011;
+  color: #fff;
+  font-family: "popins-font";
+  font-size: 14px;
+}
+html,
+body {
+  scroll-behavior: smooth;
+}
+.icon {
+  position: relative;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-size: 18px 18px;
+  float: none !important;
+  vertical-align: top;
+}
+.icon-clock {
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-right: 3px !important;
+}
+.icon-clock.white {
+  background-image: url(../themes/metaxland/assets/images/icons/clock_1.png);
+}
+.icon-backpack {
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-right: 3px !important;
+}
+.icon-backpack.white {
+  background-image: url(../themes/metaxland/assets/images/icons/backpack_1.png);
+}
+.icon-caret-down {
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-right: 9px !important;
+}
+.icon-caret-down.white {
+  background-image: url(../themes/metaxland/assets/images/icons/caret-down_1.png);
+}
+.icon-mail-export-ou-lc {
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-right: 9px !important;
+}
+.icon-mail-export-ou-lc.white {
+  background-image: url(../themes/metaxland/assets/images/icons/mail-export-ou-lc_1.png);
+}
+.icon-menu-book {
+  background-image: url(../themes/metaxland/assets/images/icons/menu_book.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-right: 9px !important;
+}
+#tutorials {
+  overflow: visible;
+  padding-top: 90px;
+}
+#tutorials select {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+}
+#tutorials .btn {
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 300px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding: 16px 25px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 120%;
+}
+#tutorials .btn.aqua {
+  background: radial-gradient(
+    224.17% 635.42% at 76.96% -38.54%,
+    #00fff0 0%,
+    #4609ae 100%
+  );
+  color: #fff;
+  border: 0;
+}
+#tutorials .btn.norm {
+  border: 1px solid #fff;
+  color: #fff;
+}
+#tutorials .btn.white {
+  background-color: #fff;
+  color: #050011;
+}
+#tutorials .pinkish {
+
+}
+#tutorials .bg {
+  background-image: url(../themes/metaxland/assets/images/metabuildingblock_bg.png);
+}
+#tutorials .content-place {
+  margin: auto;
+  width: 502px;
+}
+#tutorials .content-place h1 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 44px;
+  line-height: 46px;
+  color: #fff;
+  text-transform: capitalize;
+}
+#tutorials .content-place p {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 120%;
+  color: #fff;
+  margin: 6px 0;
+  font-style: normal;
+}
+#tutorials .content-place .career-select {
+  margin-top: 48px;
+  margin-bottom: 34px;
+}
+#tutorials .career-deps {
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+#tutorials .career-deps::-webkit-scrollbar {
+  display: none;
+}
+#tutorials .checkbox-department:checked,
+#tutorials .checkbox-department:not(:checked) {
+  position: absolute;
+  left: -9999px;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+#tutorials .checkbox-department:checked + label,
+#tutorials .checkbox-department:not(:checked) + label {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: all 300ms linear;
+  margin: 4px;
+  padding: 6px 12px;
+  border-radius: 216px;
+  color: white;
+}
+#tutorials .checkbox-department:not(:checked) + label {
+}
+#tutorials .checkbox-department:checked + label {
+  
+}
+#tutorials .checkbox-department:not(:checked) + label:hover {
+  /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); */
+}
+#tutorials .checkbox-department:checked + label::before,
+#tutorials .checkbox-department:not(:checked) + label::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+}
+#tutorials .checkbox-department:checked + label span span,
+#tutorials .checkbox-department:not(:checked) + label span span {
+  background: rgba(169, 158, 189, 0.25);
+  border-radius: 20px;
+  margin-left: 5px;
+}
+.career-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px;
+  gap: 26px;
+  margin-bottom: 24px;
+  width: 100%;
+  background: rgba(169, 158, 189, 0.25);
+  box-shadow: 0 10px 24pxrgba 0, 0, 0, 0.5;
+  backdrop-filter: blur(60px);
+  -webkit-backdrop-filter: blur(60px);
+  border-radius: 12px;
+}
+.career-1 .career-first {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+.career-1 .career-first .career-features {
+  display: flex;
+  gap: 27px;
+}
+.career-1 .career-first h4 {
+  text-transform: capitalize;
+  color: #fff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 26px;
+  margin: 0;
+}
+.career-1 .left-content {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+}
+.career-1 .left-content .btn-place {
+  width: 216px;
+  order: 2;
+  align-self: flex-end;
+}
+.career-1 .left-content .career-descs {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.career-1 .left-content .career-descs .career-desc {
+  color: #fff;
+  opacity: 0.75;
+  margin-bottom: 26px;
+}
+.career-1 .left-content .career-descs .career-desc-long {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 1s 0s ease-out, margin 0.5s 0.2s linear;
+}
+.career-1 .left-content .career-descs .career-desc-long :last-child {
+  margin-bottom: 0;
+}
+.career-1 .left-content .career-descs .career-desc-long p,
+.career-1 .left-content .career-descs .career-desc-long li {
+  opacity: 0.75;
+}
+.career-1 .left-content .career-descs .career-desc-long p {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.career-1 .left-content .career-descs .career-desc-long.show {
+  max-height: 3000px;
+  transition: max-height 1s ease-in;
+  margin-bottom: 26px;
+}
+.career-1 .career-more-ddwn {
+  color: #fff;
+  text-decoration: none;
+}
+.career-1 .career-more-ddwn label:hover,
+.career-1 .career-more-ddwn span:hover {
+  cursor: pointer;
+}
+.career-1 .reverse {
+  transform: rotate(180deg);
+}
+@-webkit-keyframes smooth {
+  0% {
+    transform: scaleY(0);
+    max-height: 0;
+  }
+  100% {
+    transfomrm: scaleY(1);
+    max-height: 9999vw;
+  }
+}
+@media screen and (max-width: 992px) {
+  .content-place {
+    width: auto !important;
+  }
+  .career-select .career-deps {
+  }
+  .career-1 {
+    flex-wrap: wrap;
+  }
+  .career-1 .left-content {
+    width: 100%;
+    flex-direction: column;
+  }
+  .career-1 .left-content .btn-place {
+    order: 0;
+    align-self: center;
+    width: 100%;
+  }
+  .career-1 .left-content .career-descs {
+    width: 100%;
+  }
+  .career-1 .left-content .career-descs .career-more-ddwn {
+    display: flex;
+    justify-content: space-between;
+  }
+}
